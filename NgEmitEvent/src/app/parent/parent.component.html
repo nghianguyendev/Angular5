@@ -1,8 +1,4 @@
 <p>
-  <app-child [counter]="counter" (counterChange)="counterChanged($event)"></app-child>
+  <app-child (counterChange)="counterChanged($event)"></app-child>
   Parent: Counter passed from child {{counter}}
-</p>
-<p>
-  Pass to child
-  <input [(ngModel)]="counter" type="number" name="" placeholder="number">
 </p>
